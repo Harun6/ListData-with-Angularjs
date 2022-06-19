@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="Data.js"></script>
+    <script src="Factory.js"></script>
+    <script src="HelperService.js"></script>
+    <script src="Main.js"></script>
+  </head>
+  <body>
+    <div ng-app="FormApp" ng-controller="FormController">
+      <table>
+        <tr>
+          <td>Name :</td>
+          <td>
+            <input type="text" id="TxtUsername" />
+          </td>
+        </tr>
+        <tr>
+          <td>Surname :</td>
+          <td>
+            <input type="text" id="TxtUsersurname" />
+          </td>
+        </tr>
+        <tr>
+          <td>E-mail :</td>
+          <td>
+            <input type="text" id="TxtMailAddress" />
+          </td>
+        </tr>
+        <tr>
+          <td>Security Number :</td>
+          <td>
+            <input type="text" id="TxtSecurityNumber" />
+          </td>
+        </tr>
+        <tr>
+          <td>Add :</td>
+          <td colspan="2">
+            <input
+              type="button"
+              id="BtnRegister"
+              value="Add"
+              ng-click="AddUser();"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Subtract :</td>
+          <td colspan="2">
+            <input
+              type="button"
+              id="BtnRegister"
+              value="Subtract"
+              ng-click="SubtractUser();"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
